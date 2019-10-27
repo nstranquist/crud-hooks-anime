@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import AnimeList from './lists/AnimeList'
 import './App.css';
 
 const App: React.FC = () => {
+  const initialAnimeData = [
+    { id: 0, title: 'my hero academia', rating: 4 },
+    { id: 1, title: 'sword art online', rating: 5 },
+    { id: 2, title: 'vampire night', rating: 3 },
+  ]
+  const [animes, setAnimes] = useState(initialAnimeData)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Anime Form</h1>
+      <div className="splitscreen">
+        <div className="split-item left">
+          <h2 className="section-heading">Add</h2>
+        </div>
+        <div className="split-item right">
+          <h2 className="section-heading">Your Animes</h2>
+          <AnimeList animes={animes} />
+        </div>
+      </div>
     </div>
   );
 }
