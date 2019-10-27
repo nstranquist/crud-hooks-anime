@@ -3,10 +3,14 @@ import { Anime } from '../types'
 
 interface IProps {
   animes: Anime[]
+  //editAnime(id: number): void
+  //deleteAnime(id: number): void
 }
 
 const AnimeList: React.FC<IProps> = ({
-  animes
+  animes,
+  //editAnime,
+  //deleteAnime
 }) => {
 
   return (

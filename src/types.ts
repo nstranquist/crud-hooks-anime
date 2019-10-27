@@ -1,7 +1,7 @@
 
 
 export interface Anime {
-  id: number
+  id: number | undefined | null
   title: string
-  rating: number
+  rating: number | undefined | null
 }
