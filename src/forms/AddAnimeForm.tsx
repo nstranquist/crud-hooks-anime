@@ -23,10 +23,14 @@ const AddAnimeForm: React.FC<IProps> = ({
       addAnime(newAnime)
       setNewAnime(initialFormState)
     }}>
-      <label>Title</label>
-      <input type="text" name="title" value={newAnime.title} onChange={handleInputChange} />
-      <label>Rating</label>
-      <input type="number" name="rating" min="1" max="5" value={newAnime.rating} onChange={handleInputChange} />
+      <div className="form-item">
+        <label>Title</label>
+        <input type="text" name="title" value={newAnime.title} onChange={handleInputChange} />
+      </div>
+      <div className="form-item">
+        <label>Rating</label>
+        <input type="number" name="rating" min="1" max="5" value={newAnime.rating} onChange={handleInputChange} />
+      </div>
       <button className="btn btn-primary">
         Add
       </button>

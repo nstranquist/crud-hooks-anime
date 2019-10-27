@@ -16,6 +16,9 @@ const App: React.FC = () => {
     newAnime.id = animes.length + 1   // use firebase here
     setAnimes([...animes, newAnime])
   }
+  const deleteAnime = (id: number) => {
+    setAnimes(animes.filter(anime => anime.id !== id))
+  }
 
   return (
     <div className="App">
@@ -27,7 +30,7 @@ const App: React.FC = () => {
         </div>
         <div className="split-item right">
           <h2 className="section-heading">Your Animes</h2>
-          <AnimeList animes={animes} />
+          <AnimeList animes={animes} deleteAnime={deleteAnime} />
         </div>
       </div>
     </div>

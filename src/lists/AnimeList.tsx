@@ -4,13 +4,13 @@ import { Anime } from '../types'
 interface IProps {
   animes: Anime[]
   //editAnime(id: number): void
-  //deleteAnime(id: number): void
+  deleteAnime(id: number): void
 }
 
 const AnimeList: React.FC<IProps> = ({
   animes,
   //editAnime,
-  //deleteAnime
+  deleteAnime
 }) => {
 
   return (
@@ -23,7 +23,10 @@ const AnimeList: React.FC<IProps> = ({
             <button className="btn btn-primary">
               Edit
             </button>
-            <button className="btn">
+            <button onClick={(event) => {
+              event.preventDefault()
+              deleteAnime(anime.id!)
+            }} className="btn">
               Delete
             </button>
           </div>

@@ -45,3 +45,15 @@
 .btn-primary {
   background: lightblue;
 }
+.form-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.form-item label { 
+  min-width: 50px;
+  display: inline-block;
+}
+.form-item input {
+  padding: 10px 5px;
+  margin-left: 5px;
+}
