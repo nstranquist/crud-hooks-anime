@@ -3,13 +3,13 @@ import { Anime } from '../types'
 
 interface IProps {
   animes: Anime[]
-  //editAnime(id: number): void
+  editAnime(anime: Anime): void
   deleteAnime(id: number): void
 }
 
 const AnimeList: React.FC<IProps> = ({
   animes,
-  //editAnime,
+  editAnime,
   deleteAnime
 }) => {
 
@@ -20,7 +20,10 @@ const AnimeList: React.FC<IProps> = ({
           <h3>{anime.title}</h3>
           <p>{anime.rating} stars</p>
           <div className="buttonbar">
-            <button className="btn btn-primary">
+            <button onClick={(event) => {
+              event.preventDefault()
+              editAnime(anime)
+            }} className="btn btn-primary">
               Edit
             </button>
             <button onClick={(event) => {
