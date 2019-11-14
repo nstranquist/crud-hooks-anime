@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/crud-hooks-anime/static/css/main.3a4057f7.chunk.css",
+    "main.js": "/crud-hooks-anime/static/js/main.d27b1070.chunk.js",
+    "main.js.map": "/crud-hooks-anime/static/js/main.d27b1070.chunk.js.map",
+    "runtime-main.js": "/crud-hooks-anime/static/js/runtime-main.7f440afb.js",
+    "runtime-main.js.map": "/crud-hooks-anime/static/js/runtime-main.7f440afb.js.map",
+    "static/js/2.d71126f1.chunk.js": "/crud-hooks-anime/static/js/2.d71126f1.chunk.js",
+    "static/js/2.d71126f1.chunk.js.map": "/crud-hooks-anime/static/js/2.d71126f1.chunk.js.map",
+    "index.html": "/crud-hooks-anime/index.html",
+    "precache-manifest.178ca48f96823e4f4d4fa039701d73aa.js": "/crud-hooks-anime/precache-manifest.178ca48f96823e4f4d4fa039701d73aa.js",
+    "service-worker.js": "/crud-hooks-anime/service-worker.js",
+    "static/css/main.3a4057f7.chunk.css.map": "/crud-hooks-anime/static/css/main.3a4057f7.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f440afb.js",
+    "static/js/2.d71126f1.chunk.js",
+    "static/css/main.3a4057f7.chunk.css",
+    "static/js/main.d27b1070.chunk.js"
+  ]
+}
